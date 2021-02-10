@@ -24,19 +24,19 @@ sensor cap sticking out of the case, and it works pretty well!
 
 ### GUI Config
 
-Module->GPIO 1: switch_n (2)
-MQTT = I set this up to integrate with my HA Mosquitto broker and set it up in HA as a light, so I have normal HA control of it.
+1. Module->GPIO 1: switch_n (2)
+2. MQTT = I set this up to integrate with my HA Mosquitto broker and set it up in HA as a light, so I have normal HA control of it.
 
 ### Command Config
 
 switchmode2: 1 (follow)
 
 ### Rules Pseudo code:
-save power state into var1
-If motion (switch2 transitions to 1), trigger 'poweronmotion' event set to power status (var1).
-If poweronmotion event fires with value of 0 (power is off), turn power on and start 10s timer
-Turn off power when timer expires
-Do nothing if switch2 transitions to 0 (so that power doesn't turn off 2 sec after motion)
+- save power state into var1
+- If motion (switch2 transitions to 1), trigger 'poweronmotion' event set to power status (var1).
+- If poweronmotion event fires with value of 0 (power is off), turn power on and start 10s timer
+- Turn off power when timer expires
+- Do nothing if switch2 transitions to 0 (so that power doesn't turn off 2 sec after motion)
 
 ### Commands
 ```
