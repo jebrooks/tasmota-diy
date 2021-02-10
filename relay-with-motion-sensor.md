@@ -17,13 +17,13 @@ with about 1.5-inch wire to connect Sensor to Sonoff.  Drilled hole in top of So
 shaped sensor would fit - hole is width of nushroon 'stem' so 'cap' is just a bit wider.  You end up with the
 cap sticking out of the case, and works pretty well!
 
-##Tasmota Config:
+## Tasmota Config:
 
 ### GUI Config:
 
   Module->GPIO 1: switch_n (2)
 
-###Command Config:
+### Command Config:
 
 switchmode2: 1 (follow)
 
