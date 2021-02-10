@@ -3,8 +3,6 @@
 This custom device Behaves just like a normal Sonoff R2 Basic on Tasmota, but with added benefit that if it's off, it will turn on when motion
 is detected and then turn off 10 seconds later.  It will not turn off it was originally on.
 
-The motion sensor middle pin goes to high when motion is detected, and then back to low a couple seconds later.  
-
 ## Stuff Needed
 1. Sonoff Basic R2
 2. HiLetgo AM312 Motion Sensor
@@ -19,6 +17,15 @@ TX (GPIO 1) pin, 3.3V power and ground connected accordingly.  Used standard fem
 with about 1.5-inch wire to connect Sensor to Sonoff.  Drilled hole in top of Sonoff case so that mushroom
 shaped sensor would fit - hole is width of nushroon 'stem' so 'cap' is just a bit wider.  You end up with the
 sensor cap sticking out of the case, and it works pretty well!
+
+![Wiring]relay-with-motion-sensor-img1.heic
+![Finished]relay-with-motion-sensor-img2.heic
+
+## Notes
+
+The motion sensor middle pin goes to high when motion is detected, and then back to low a couple seconds later.  
+
+I couldn't find GPIO 14 on this Sonoff configuration, it looks different than a lot of the DIY projects out there.  GPIO 1 (tx) is actually a simpler solution anyway since I don't need to solder a 5th pin.
 
 ## Tasmota Config
 
