@@ -18,8 +18,8 @@ with about 1.5-inch wire to connect Sensor to Sonoff.  Drilled hole in top of So
 shaped sensor would fit - hole is width of nushroon 'stem' so 'cap' is just a bit wider.  You end up with the
 sensor cap sticking out of the case, and it works pretty well!
 
-![Wiring](relay-with-motion-sensor-img1.png)
-![Finished](relay-with-motion-sensor-img2.png)
+![Wiring](relay-with-motion-sensor-img1.png =200x)
+![Finished](relay-with-motion-sensor-img2.png =200x)
 
 ## Notes
 
